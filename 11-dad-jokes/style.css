@@ -1,0 +1,70 @@
+/* Importing the Roboto font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Applies box-sizing property to all elements, making the height and width include padding and border */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the body element */
+body {
+  background-color: #686de0; /* Sets the background color to a shade of blue */
+  font-family: "Roboto", sans-serif; /* Sets the font family to Roboto with fallback to sans-serif */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Sets the flex direction to column */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+  overflow: hidden; /* Hides overflowing content */
+  margin: 0; /* Removes margin */
+  padding: 20px; /* Adds padding to the body */
+}
+
+/* Styling for the container element */
+.container {
+  background-color: #fff; /* Sets the background color to white */
+  border-radius: 10px; /* Adds rounded corners to the container */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1); /* Adds a box shadow */
+  padding: 50px 20px; /* Adds padding to the container */
+  text-align: center; /* Centers text horizontally */
+  max-width: 100%; /* Sets the maximum width of the container to 100% */
+  width: 800px; /* Sets the width of the container to 800 pixels */
+}
+
+/* Styling for the h3 element */
+h3 {
+  margin: 0; /* Removes top and bottom margin */
+  opacity: 0.5; /* Sets the opacity of the heading to 50% */
+  letter-spacing: 2px; /* Adds spacing between letters */
+}
+
+/* Styling for the joke class */
+.joke {
+  font-size: 30px; /* Sets the font size to 30 pixels */
+  letter-spacing: 1px; /* Adds spacing between letters */
+  line-height: 40px; /* Sets the line height to 40 pixels */
+  margin: 50px auto; /* Centers the element horizontally and adds margin to the top and bottom */
+  max-width: 600px; /* Sets the maximum width of the joke to 600 pixels */
+}
+
+/* Styling for the btn class */
+.btn {
+  background-color: #9f68e0; /* Sets the background color to a shade of purple */
+  color: #fff; /* Sets the text color to white */
+  border: 0; /* Removes the border */
+  border-radius: 10px; /* Adds rounded corners to the button */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1); /* Adds a box shadow */
+  padding: 14px 40px; /* Adds padding to the button */
+  font-size: 16px; /* Sets the font size to 16 pixels */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+/* Styling for the active state of the btn class */
+.btn:active {
+  transform: scale(0.98); /* Slightly scales down the button on activation */
+}
+
+/* Styling for the focus state of the btn class */
+.btn:focus {
+  outline: 0; /* Removes the default focus outline */
+}

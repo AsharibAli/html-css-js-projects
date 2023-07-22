@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+/* The imported font from Google Fonts */
+
+:root {
+  /* Defines custom CSS variables for color values */
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Sets the background color and font family */
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header {
+  /* Styles the header section */
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secondary-color);
+}
+
+.search {
+  /* Styles the search input field */
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.search::placeholder {
+  /* Styles the placeholder text in the search input field */
+  color: #7378c5;
+}
+
+.search:focus {
+  /* Styles the search input field when focused */
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+main {
+  /* Styles the main content section */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  /* Styles the movie cards */
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  /* Styles the movie images */
+  width: 100%;
+}
+
+.movie-info {
+  /* Styles the movie information section */
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+  /* Styles the movie title */
+  margin-top: 0;
+}
+
+.movie-info span {
+  /* Styles the status label */
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  /* Styles the status label with green color */
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  /* Styles the status label with orange color */
+  color: orange;
+}
+
+.movie-info span.red {
+  /* Styles the status label with red color */
+  color: red;
+}
+
+.overview {
+  /* Styles the movie overview section */
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+  /* Styles the movie overview section on hover */
+  transform: translateY(0);
+}

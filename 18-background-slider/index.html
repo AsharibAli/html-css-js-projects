@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Declaring the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Setting the viewport to control how the webpage appears on different devices -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- Linking an external CSS file that contains the Font Awesome library -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking an external CSS file named style.css -->
+    <title>Background Slider</title>
+    <!-- Setting the title of the webpage -->
+  </head>
+  <body>
+    <div class="slider-container">
+      <!-- Creating a div with the class 'slider-container' -->
+      <div
+        class="slide active"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+        "
+      ></div>
+      <!-- Creating a div with the classes 'slide' and 'active' and setting its background image using inline CSS -->
+
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80');
+        "
+      ></div>
+      <!-- Creating another div with the class 'slide' and setting its background image using inline CSS -->
+
+      <!-- The following four <div> elements follow the same structure as the previous two -->
+
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1495467033336-2effd8753d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+        "
+      ></div>
+
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80');
+        "
+      ></div>
+
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1559087867-ce4c91325525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+        "
+      ></div>
+
+      <button class="arrow left-arrow" id="left">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <!-- Creating a button element with the classes 'arrow' and 'left-arrow' and an id of 'left', and adding an icon inside it using the Font Awesome library -->
+
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+      <!-- Creating another button element with the classes 'arrow' and 'right-arrow' and an id of 'right', and adding an icon inside it using the Font Awesome library -->
+    </div>
+    <script src="script.js"></script>
+    <!-- Linking an external JavaScript file named script.js -->
+  </body>
+</html>

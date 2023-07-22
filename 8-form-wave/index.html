@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Include a CSS file called "style.css" -->
+    <title>Form Input Wave</title>
+    <!-- Set the title of the page to "Form Input Wave" -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please Login</h1>
+      <!-- Display the heading "Please Login" -->
+      <form>
+        <div class="form-control">
+          <input type="text" required />
+          <!-- Create a text input field that is required for submission -->
+          <label>Email</label>
+          <!-- Display the label "Email" for the text input field -->
+          <!-- The following commented section is an alternative way to display the label "Email" with each character being animated -->
+        </div>
+
+        <div class="form-control">
+          <input type="password" required />
+          <!-- Create a password input field that is required for submission -->
+          <label>Password</label>
+          <!-- Display the label "Password" for the password input field -->
+        </div>
+
+        <button class="btn">Login</button>
+        <!-- Display a button with the text "Login" -->
+
+        <p class="text">Don't have an account? <a href="#">Register</a></p>
+        <!-- Display a paragraph with the text "Don't have an account? Register", where "Register" is a link -->
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <!-- Include a JavaScript file called "script.js" -->
+  </body>
+</html>

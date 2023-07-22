@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap"); /* Imports the Muli font from Google Fonts */
+
+* {
+  box-sizing: border-box; /* Ensures that the padding and border of elements are included in their total width and height */
+}
+
+body {
+  background-color: #2b88fa; /* Sets the background color of the body to a specific shade of blue */
+  font-family: "Muli", sans-serif; /* Sets the font family for the entire document to Muli, or a generic sans-serif font if Muli is not available */
+  display: flex; /* Uses flexbox to create a flexible layout */
+  flex-direction: column; /* Arranges child elements vertically within the body */
+  align-items: center; /* Centers child elements horizontally within the body */
+  justify-content: center; /* Centers child elements vertically within the body */
+  height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+  overflow: hidden; /* Hides any content that overflows the body */
+  margin: 0; /* Removes margin from the body */
+}
+
+h3 {
+  color: #fff; /* Sets the text color to white */
+  margin: 10px 0 20px; /* Sets the top margin to 10px, bottom margin to 20px, and left/right margins to 0 */
+  text-align: center; /* Centers the text within the h3 element */
+}
+
+.container {
+  width: 500px; /* Sets the width of the container to 500px */
+}
+
+textarea {
+  border: none; /* Removes the border from the textarea */
+  display: block; /* Makes the textarea a block level element */
+  width: 100%; /* Sets the width of the textarea to 100% of its container */
+  height: 100px; /* Sets the height of the textarea to 100px */
+  font-family: inherit; /* Inherits the font family from its parent element */
+  padding: 10px; /* Adds 10px of padding to all sides of the textarea */
+  margin: 0 0 20px; /* Sets the bottom margin to 20px and left/right margins to 0 */
+  font-size: 16px; /* Sets the font size to 16px */
+}
+
+textarea:focus {
+  outline: none; /* Removes the focus outline when the textarea is selected */
+}
+
+.tag {
+  background-color: #f0932b; /* Sets the background color of the tag to a specific shade of orange */
+  color: #fff; /* Sets the text color of the tag to white */
+  border-radius: 50px; /* Rounds the corners of the tag */
+  padding: 10px 20px; /* Adds 10px of padding to the top/bottom and 20px of padding to the left/right of the tag */
+  margin: 0 5px 10px 0; /* Sets the right margin to 5px, bottom margin to 10px, and left/top margins to 0 */
+  font-size: 14px; /* Sets the font size of the tag to 14px */
+  display: inline-block; /* Makes the tag behave as an inline element with block-level properties */
+}
+
+.tag.highlight {
+  background-color: #273c75; /* Changes the background color of the highlighted tag to a specific shade of blue */
+}

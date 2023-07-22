@@ -1,0 +1,73 @@
+/* Importing the font 'Muli' from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* Apply box-sizing: border-box to all elements in the document */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the body element */
+body {
+  /* Set background color to #383838 */
+  background-color: #383838;
+  /* Use the 'Muli' font family for text */
+  font-family: "Muli", sans-serif;
+  /* Align items along the horizontal and vertical center of the body */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Center-align text within the body */
+  text-align: center;
+  /* Set the height of the body to 100% of the viewport height */
+  height: 100vh;
+  /* Hide any overflowing content */
+  overflow: hidden;
+  /* Remove default margin on the body */
+  margin: 0;
+}
+
+/* Styling for elements with class 'key' */
+.key {
+  /* Add a 1px solid border with color #999999 */
+  border: 1px solid #999999;
+  /* Set background color to #2b2b2b */
+  background-color: #2b2b2b;
+  /* Add a box shadow effect */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  /* Display elements as inline-flex */
+  display: inline-flex;
+  /* Align items along the center vertically */
+  align-items: center;
+  /* Set font size to 20px */
+  font-size: 20px;
+  /* Set font weight to bold */
+  font-weight: bold;
+  /* Add padding of 20px */
+  padding: 20px;
+  /* Arrange flex items in a column */
+  flex-direction: column;
+  /* Add margin of 10px */
+  margin: 10px;
+  /* Set minimum width to 150px */
+  min-width: 150px;
+  /* Set text color to white */
+  color: white;
+  /* Position the element relatively */
+  position: relative;
+}
+
+/* Styling for 'small' elements within elements with class 'key' */
+.key small {
+  /* Position the element absolutely above the parent key element */
+  position: absolute;
+  top: -24px;
+  left: 0;
+  /* Center-align text within the element */
+  text-align: center;
+  /* Set width to 100% */
+  width: 100%;
+  /* Set text color to #c4c4c4 */
+  color: #c4c4c4;
+  /* Set font size to 14px */
+  font-size: 14px;
+}

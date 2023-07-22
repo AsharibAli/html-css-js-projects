@@ -1,0 +1,125 @@
+/* Import the "Muli" font from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* Apply box-sizing: border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set the font family and background color for the body */
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Styling for the h1 heading */
+h1 {
+  margin: 50px 0 30px; /* Margin top, bottom and 0 on the right */
+  text-align: center;
+}
+
+/* Container for the FAQ section */
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styling for each FAQ item */
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* Styling for active (expanded) FAQ items */
+.faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the icon before and after expanded FAQ items */
+.faq.active::before,
+.faq.active::after {
+  content: "\f075"; /* Font Awesome icon */
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+/* Styling for the icon before expanded FAQ items */
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+/* Styling for the FAQ title */
+.faq-title {
+  margin: 0 35px 0 0; /* Margin 0 on the left, 35px on the right and 0 on the bottom */
+}
+
+/* Styling for the FAQ text */
+.faq-text {
+  display: none;
+  margin: 30px 0 0; /* Margin 30px on the top and 0 on the right and bottom */
+}
+
+/* Styling for the FAQ text when FAQ item is active (expanded) */
+.faq.active .faq-text {
+  display: block;
+}
+
+/* Styling for the FAQ toggle button */
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+/* Remove focus outline from the FAQ toggle button */
+.faq-toggle:focus {
+  outline: 0;
+}
+
+/* Styling for the "times" (close) icon in the FAQ toggle button */
+.faq-toggle .fa-times {
+  display: none;
+}
+
+/* Styling for the "times" (close) icon in the FAQ toggle button when FAQ item is active (expanded) */
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+/* Styling for the "chevron-down" icon in the FAQ toggle button when FAQ item is active (expanded) */
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+/* Styling for the FAQ toggle button when FAQ item is active (expanded) */
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}

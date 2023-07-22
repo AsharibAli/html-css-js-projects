@@ -1,0 +1,2 @@
+# Improve 1% Everyday Coding Projects. <br>
+## To enhance my logic building in programming, I'm following my own startegy, Improve 1% everyday for next 100 Days, these are the projects that I coded in an more effecient way.

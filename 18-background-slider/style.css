@@ -1,0 +1,120 @@
+/* Importing the Roboto font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Setting the box-sizing property for all elements to border-box */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the body element */
+body {
+  /* Setting the font-family to Roboto, with a fallback to sans-serif */
+  font-family: "Roboto", sans-serif;
+  /* Setting the display to flex and aligning items in the center vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Setting the height of the body to 100% of the viewport height */
+  height: 100vh;
+  /* Hiding any overflow */
+  overflow: hidden;
+  /* Removing margin from the body */
+  margin: 0;
+  /* Positioning the background image at the center and covering the entire area */
+  background-position: center center;
+  background-size: cover;
+  /* Adding a transition effect with a duration of 0.4s */
+  transition: 0.4s;
+}
+
+/* Styling for the pseudo-element "::before" of the body element */
+body::before {
+  /* Adding content to the pseudo-element */
+  content: "";
+  /* Positioning the pseudo-element at the top left corner */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Setting the width and height of the pseudo-element to cover the entire area */
+  width: 100%;
+  height: 100vh;
+  /* Setting the background color to a semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Placing the pseudo-element below other elements using z-index */
+  z-index: -1;
+}
+
+/* Styling for the slider container */
+.slider-container {
+  /* Adding a box shadow to give depth to the container */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /* Setting the height and width of the container */
+  height: 70vh;
+  width: 70vw;
+  /* Positioning the container relatively */
+  position: relative;
+  /* Hiding any overflowing content inside the container */
+  overflow: hidden;
+}
+
+/* Styling for the individual slides */
+.slide {
+  /* Setting the initial opacity of the slide to 0 */
+  opacity: 0;
+  /* Setting the height and width of the slide to cover the entire area */
+  height: 100vh;
+  width: 100vw;
+  /* Positioning the slide at a slight offset from the top and left of the container */
+  top: -15vh;
+  left: -15vw;
+  /* Adding a transition effect with a duration of 0.4s and an easing function */
+  transition: 0.4s ease;
+  /* Placing the slide above other elements using z-index */
+  z-index: 1;
+}
+
+/* Styling for the active slide */
+.slide.active {
+  /* Changing the opacity of the active slide to 1 */
+  opacity: 1;
+}
+
+/* Styling for the arrow navigation buttons */
+.arrow {
+  /* Positioning the arrows as fixed elements */
+  position: fixed;
+  /* Setting the background color to transparent */
+  background-color: transparent;
+  /* Setting the text color to white */
+  color: #fff;
+  /* Adding padding around the arrow icon */
+  padding: 20px;
+  /* Setting the font size of the arrow icon */
+  font-size: 30px;
+  /* Adding a border with a color of orange */
+  border: 2px solid orange;
+  /* Positioning the arrows vertically centered */
+  top: 50%;
+  /* Moving the arrows halfway up using translateY transform */
+  transform: translateY(-50%);
+  /* Setting the cursor to be a pointer on hover */
+  cursor: pointer;
+}
+
+/* Removing the outline when the arrow is focused */
+.arrow:focus {
+  outline: 0;
+}
+
+/* Styling for the left arrow */
+.left-arrow {
+  /* Positioning the left arrow at a calculated distance from the left edge of the container */
+  left: calc(15vw - 65px);
+}
+
+/* Styling for the right arrow */
+.right-arrow {
+  /* Positioning the right arrow at a calculated distance from the right edge of the container */
+  right: calc(15vw - 65px);
+}

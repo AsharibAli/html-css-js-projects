@@ -1,0 +1,119 @@
+/* Imports the Montserrat font from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
+/* Defines CSS variables for border color and fill color */
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+}
+
+/* Sets the box-sizing property to border-box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Applies various styles to the body element, including background color, text color, font family, flex layout, and margin */
+body {
+  background-color: #3494e4;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Applies margin to the h1 element */
+h1 {
+  margin: 10px 0 0;
+}
+
+/* Applies font weight and margin to the h3 element */
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+/* Applies various styles to the .cup class, including background color, border, color, border radius, dimensions, margin, flex layout, and overflow */
+.cup {
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Applies various styles to the .cup.cup-small class, including dimensions, border radius, background color, cursor, font size, flex layout, margin, and transition */
+.cup.cup-small {
+  height: 95px;
+  width: 50px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+/* Applies styles to the .cup.cup-small.full class when it has the "full" class, including background color and text color */
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+
+/* Applies various styles to the .cups class, including flex layout, flex wrap, alignment, justification, and width */
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+/* Applies various styles to the .remained class, including flex layout, flex direction, alignment, justification, text alignment, flex grow, and transition */
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+/* Applies font size and font weight to the span element within the .remained class */
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Applies font size to the small element within the .remained class */
+.remained small {
+  font-size: 12px;
+}
+
+/* Applies various styles to the .percentage class, including background color, flex layout, alignment, justification, font weight, font size, height, and transition */
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+/* Applies text alignment and margin to the .text class */
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}

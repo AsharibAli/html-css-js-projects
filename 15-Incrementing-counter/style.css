@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+/* Importing the Roboto Mono font from Google Fonts */
+
+* {
+  box-sizing: border-box;
+  /* Apply box-sizing: border-box; to all elements, which ensures that padding and border are included in the element's total width and height */
+}
+
+body {
+  background-color: #8e44ad;
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  /* Styling for the body element */
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+  /* Styles for the container holding the counters */
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+  /* Styles for the individual counter */
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+  /* Media query for screens with a maximum width of 580px, where the body flex direction changes to column */
+}
